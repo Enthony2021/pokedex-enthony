@@ -106,7 +106,6 @@ class PokeApi {
     try {
       const oldModelPokemon = await this.getSinglePokemon(pokemonUrl);
       const typesPokemon = [];
-      console.log(oldModelPokemon);
 
       oldModelPokemon.types.map((type) => {
         typesPokemon.push(type.type.name);
@@ -124,8 +123,6 @@ class PokeApi {
         height: oldModelPokemon.height,
         weight: oldModelPokemon.weight,
       };
-
-      console.log(oldModelPokemon.base_experience);
 
       this.pokemons.push(newModelPokemon);
 

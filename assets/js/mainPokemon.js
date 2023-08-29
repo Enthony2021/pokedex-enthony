@@ -51,7 +51,6 @@ function criaLiPokemon(color) {
 
 function loadMore(pokeApi, plusLimit, plusOffset) {
   if (pokeApi.pokemons.length < 151) {
-    console.log(pokeApi)
     if (plusLimit) {
       pokeApi.limit += plusLimit;
     }
@@ -95,8 +94,6 @@ function loadMore(pokeApi, plusLimit, plusOffset) {
     }
   });
 }
-
-//
 
 function calculoId(id) {
   const resto = id % 3;
